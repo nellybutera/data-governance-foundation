@@ -69,12 +69,6 @@ Investigative lab focused on identifying, classifying, and resolving data qualit
 
 ---
 
-## Context
-
-These labs were completed as part of data governance coursework at the African Leadership University (ALU). Each scenario is designed to reflect the regulatory and operational realities of data-driven businesses operating in Africa.
-
----
-
 ## Structure
 
 ```
