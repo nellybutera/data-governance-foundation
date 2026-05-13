@@ -1,0 +1,12 @@
+# Claude Code artifacts
+.claude/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor artifacts
+.vscode/
+*.swp
+*.swo
