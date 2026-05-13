@@ -1,0 +1,221 @@
+Bias Detective Investigation
+Scenario
+You're a QA engineer at TalentMatch AI, a Ghanaian HR tech company. The company has developed "HireScore," an AI tool that ranks job applicants for client companies. After 6 months of use, several clients have complained that the tool seems to favor certain types of candidates unfairly. You've been assigned to investigate potential bias in the system.
+
+Artifacts Provided
+1. Training Dataset Summary (10,000 historical applications)
+
+Successful Hires by Gender:
+
+Male: 7,200 (72%)
+
+Female: 2,800 (28%)
+
+Successful Hires by University:
+
+University of Ghana: 4,500
+
+KNUST: 3,200
+
+Ashesi: 1,800
+
+Other institutions: 500
+
+Successful Hires by Region of origin:
+
+Greater Accra: 6,000
+
+Ashanti: 2,500
+
+Other regions: 1,500
+
+Job Categories in Training Data:
+
+Software Engineering: 6,000
+
+Data Analysis: 2,000
+
+Sales/Marketing: 1,000
+
+Operations: 1,000
+
+2. Recent Scoring Results (Last Month - 1,000 new applications)
+
+Top 100 Ranked Candidates:
+
+Male: 89
+
+Female: 11
+
+University of Ghana/KNUST/Ashesi: 94
+
+Other institutions: 6
+
+Greater Accra/Ashanti origin: 91
+
+Other regions: 9
+
+Average Scores by Demographic:
+
+Male candidates: 7.2/10
+
+Female candidates: 5.8/10
+
+Accra-based candidates: 7.5/10
+
+Northern Region candidates: 5.3/10
+
+3. Model Features (What the AI considers)
+
+Years of experience
+
+University attended
+
+Previous company names
+
+Skills listed
+
+Number of professional references
+
+LinkedIn connections count
+
+Location of previous employment
+
+Extracurricular activities
+
+Age (derived from graduation year)
+
+Your Investigation Tasks
+Task 1: Identify Bias Types
+
+For each bias type below, determine if it exists in HireScore and provide evidence:
+
+1. Historical Bias
+
+Definition: Bias from past societal inequalities reflected in training data
+
+Present in HireScore? (Yes/No)
+
+Evidence from artifacts:
+
+Which groups are disadvantaged?
+
+2. Sampling Bias
+
+Definition: Training data doesn't represent the full population
+
+Present in HireScore? (Yes/No)
+
+Evidence from artifacts:
+
+Which groups are underrepresented?
+
+3. Measurement Bias
+
+Definition: Features or labels are measured differently across groups
+
+Present in HireScore? (Yes/No)
+
+Evidence from artifacts:
+
+What's being measured unfairly?
+
+4. Proxy Bias
+
+Definition: Features correlate with protected attributes (gender, ethnicity, region)
+
+Present in HireScore? (Yes/No)
+
+Which features act as proxies?
+
+How do they disadvantage certain groups?
+
+Task 2: Trace the Bias Pipeline
+
+Complete this flowchart showing where bias enters the system:
+
+[Historical Hiring Decisions]
+
+↓
+
+[Training Data Collection] → Bias Point #1: ________
+
+↓
+
+[Feature Selection] → Bias Point #2: ________
+
+↓
+
+[Model Training] → Bias Point #3: ________
+
+↓
+
+[Deployment & Scoring] → Bias Point #4: ________
+
+↓
+
+[Biased Outcomes]
+
+Task 3: Propose Mitigation Strategies
+
+For each category, recommend specific, actionable solutions:
+
+Immediate Actions (Can be done this week):
+
+Feature removal: Which features should be removed and why?
+
+Threshold adjustments: Should scoring thresholds be adjusted?
+
+Output monitoring: What metrics should be tracked weekly?
+
+Short-Term Actions (Next 1-3 months):
+
+Data collection: What new training data should be gathered?
+
+Model retraining: What should change about the training approach?
+
+Human oversight: Where should human review be added?
+
+Long-Term Actions (Next 6-12 months):
+
+Fairness metrics: Which fairness definition should TalentMatch adopt? (Demographic parity, Equalized odds, Equal opportunity)
+
+Process changes: What should change about how clients use HireScore?
+
+Transparency: What should be disclosed to applicants and clients?
+
+Your Deliverable
+Submit a "Bias Investigation Report" containing:
+
+Executive Summary:
+
+Overall bias severity (Low/Medium/High)
+
+Primary affected groups
+
+Top 3 recommended actions
+
+Detailed Findings:
+
+Bias type analysis with evidence
+
+Bias pipeline mapping
+
+Feature analysis
+
+Mitigation Plan:
+
+Prioritized action items with owners
+
+Success metrics for each action
+
+Timeline
+
+Success Criteria
+Correctly identified multiple bias types with evidence
+
+Traced bias to specific points in the ML pipeline
+
+Proposed practical, role-appropriate mitigation strategies
+
+Recognized trade-offs between different fairness definitions
